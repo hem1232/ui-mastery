@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UI Mastery — HTML · CSS · JavaScript · Angular, In Depth</title>
+<meta name="description" content="A deep, example-driven reference covering HTML, CSS, JavaScript and Angular for UI developers.">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="app">
+
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <a href="#/" class="brand-mark"><span class="bracket">&lt;/&gt;</span> UI MASTERY</a>
+      <div class="brand-sub">HTML · CSS · JavaScript · Angular</div>
+    </div>
+    <div class="search-wrap">
+      <div class="search-box">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input id="searchInput" type="text" placeholder="Search concepts…" autocomplete="off">
+      </div>
+    </div>
+    <nav class="nav-scroll" id="navScroll"></nav>
+    <div class="sidebar-footer">Reference build · v1.0</div>
+  </aside>
+
+  <div class="main">
+    <div class="topbar">
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <div class="breadcrumb" id="breadcrumb">Home</div>
+    </div>
+    <main class="content" id="content"></main>
+  </div>
+
+</div>
+
+<script src="js/helpers.js"></script>
+<script src="js/data/html-content.js"></script>
+<script src="js/data/css-content.js"></script>
+<script src="js/data/javascript-content.js"></script>
+<script src="js/data/angular-content.js"></script>
+<script>
+  window.CONTENT = {
+    html: window.HTML_CONTENT,
+    css: window.CSS_CONTENT,
+    js: window.JS_CONTENT,
+    ng: window.NG_CONTENT,
+  };
+</script>
+<script src="js/app.js"></script>
+</body>
+</html>
